@@ -1,0 +1,92 @@
+.hero-wrapper h1 {
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  transition: all 0.5s ease;
+  transform-origin: bottom;
+}
+
+.top-content {
+  -webkit-transform: translateY(3000px);
+  transform: translateY(3000px);
+  transition: all 0.5s ease;
+}
+
+.right-content {
+  transform: translateX(3000px);
+  transform: translateX(3000px);
+  transition: all 0.5s ease;
+  transition-delay: 1.5s;
+}
+
+.left-content {
+  transform: translateX(-3000px);
+  transform: translateX(-3000px);
+  transition: all 0.5s ease;
+  transition-delay: 1s;
+}
+
+.team-wrapper .subtitle {
+  -webkit-transform: translateX(-3000px);
+  transform: translateX(-3000px);
+  transition: all 0.5s ease;
+}
+.team-wrapper .team-heading {
+  -webkit-transform: translateX(-3000px);
+  transform: translateX(-3000px);
+  transition: all 0.5s ease;
+  transition-delay: 0.5s;
+}
+.team-wrapper .team-slider {
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  transition: all 0.3s ease;
+  transition-delay: 1.2s;
+}
+
+.work-wrapper .subtitle {
+  -webkit-transform: translateY(3000px);
+  transform: translateY(3000px);
+  transition: all 0.5s ease;
+}
+.work-wrapper .work-heading {
+  -webkit-transform: translateY(3000px);
+  transform: translateY(3000px);
+  transition: all 0.5s ease;
+  transition-delay: 0.5s;
+}
+.work-wrapper .work-slider {
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  transition: all 0.3s ease;
+  transition-delay: 1.2s;
+}
+
+.animate-complete.hero-wrapper h1 {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+.animate-complete .top-content {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.animate-complete .right-content,
+.animate-complete .left-content {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+.animate-complete.team-wrapper .subtitle, .animate-complete.team-wrapper .team-heading {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+.animate-complete.team-wrapper .team-slider {
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.animate-complete.work-wrapper .subtitle, .animate-complete.work-wrapper .work-heading {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.animate-complete.work-wrapper .work-slider {
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}

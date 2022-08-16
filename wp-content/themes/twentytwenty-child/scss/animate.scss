@@ -1,0 +1,120 @@
+
+.hero-wrapper {
+    h1 {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        transition: all 0.5s ease;
+        transform-origin: bottom;
+    }
+}
+
+.top-content {
+    -webkit-transform: translateY(3000px);
+    transform: translateY(3000px);
+    transition: all 0.5s ease;
+}
+
+.right-content {
+    -webkit-transform: translateX(3000px);
+    transform: translateX(3000px);
+    transition: all 0.5s ease;
+    transition-delay: 1.5s;
+}
+
+.left-content {
+    -webkit-transform: translateX(-3000px);
+    transform: translateX(-3000px);
+    transition: all 0.5s ease;
+    transition-delay: 1s;
+}
+
+.team-wrapper {
+    .subtitle {
+        -webkit-transform: translateX(-3000px);
+        transform: translateX(-3000px);
+        transition: all 0.5s ease;
+    }
+
+    .team-heading {
+        -webkit-transform: translateX(-3000px);
+        transform: translateX(-3000px);
+        transition: all 0.5s ease;
+        transition-delay: 0.5s;
+    }
+
+    .team-slider {
+        -webkit-transform: rotateX(90deg);
+        transform: rotateX(90deg);
+        transition: all 0.3s ease;
+        transition-delay: 1.2s;
+    }
+}
+
+.work-wrapper {
+    .subtitle {
+        -webkit-transform: translateY(3000px);
+        transform: translateY(3000px);
+        transition: all 0.5s ease;
+    }
+
+    .work-heading {
+        -webkit-transform: translateY(3000px);
+        transform: translateY(3000px);
+        transition: all 0.5s ease;
+        transition-delay: 0.5s;
+    }
+
+    .work-slider {
+        -webkit-transform: rotateX(90deg);
+        transform: rotateX(90deg);
+        transition: all 0.3s ease;
+        transition-delay: 1.2s;
+    }
+}
+
+
+
+
+.animate-complete {
+    &.hero-wrapper {
+        h1 {
+            -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+        }
+    }
+
+    .top-content {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    .right-content, 
+    .left-content {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    &.team-wrapper {
+        .subtitle, .team-heading {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        .team-slider {
+            -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+        }
+    }
+
+    &.work-wrapper {
+        .subtitle, .work-heading {
+            -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+        }
+    
+        .work-slider {
+            -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+        }
+    }
+}
